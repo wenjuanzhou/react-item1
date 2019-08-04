@@ -1,0 +1,25 @@
+{
+  "extends": "react-app",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "window": false,
+    "$$": false
+  },
+  "rules": {
+    "no-var": 2,  // 不使用var声明变量
+    "no-multi-spaces": 1,  // 语句前后不出现超过1个空格
+    "no-unused-vars": 1,  // 不能出现声明后未使用的变量
+    "no-trailing-spaces": 1, // 禁止使用行尾空格
+    "space-infix-ops": 1, // 运算符两边需要空格
+    "react/jsx-space-before-closing": [ // 在闭合标签之前使用空格
+      "warn",
+      "prefer-double"
+    ],
+    "react/jsx-boolean-value": 1, // 如果某属性值为true，则只需写出该属性名
+    "react/self-closing-comp": 1, // 如果标签内没有任何子元素，则需要闭合
+    "react/jsx-pascal-case": 1  // react组件使用帕斯卡的命名方式
+  }
+}
